@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <title>Главная Страница</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="content-container">
+      <div class="header__container">
+        <div class="header__logo">LoremIpsum.<span class="text_blue">Net</span></div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#home" class="header__link text_blue">Бизнес</a>
+            </li>
+            <li class="header__item">
+              <a href="#about" class="header__link">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#services" class="header__link">Цены</a>
+            </li>
+            <li class="header__item">
+              <a href="#contact" class="header__link">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="content-container">
+      <h1 class="main-title">
+        Lorem ipsum dolor sit amet consectetur adipiscingv!
+      </h1>
+      <p class="main-description">
+        At vero eos et accusamus et iusto odio dignissimos ducimus!
+      </p>
+      <ul>
+        <li>Totam rem aperiam eaque ipsa</li>
+        <li>Sit voluptatem accusantium doloremque laudantium</li>
+        <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+      </ul>
+      <div class="button-container">
+        <a href="#learn-more" class="button">заказать</a>
+        <a href="#contact" class="button button-secondary">подробнее</a>
+      </div>
+    </div>
+  </main>
+  <div class="order">
+    <div class="content-container">
+      <h2 class="order__title">Оформление заказа</h2>
+      <p class="order__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      <div class="order__advantage">
+
+      </div>
+      <form class="order__form">
+        <label for="service">Выберите тип системы</label>
+        <select id="service" name="service" class="order__service">
+          <option value="service1">Услуга 1</option>
+          <option value="service2">Услуга 2</option>
+          <option value="service3">Услуга 3</option>
+        </select>
+        <label for="name">Ваш e-mail</label>
+        <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="order__input">
+        <label for="email">Ваше имя</label>
+        <input type="email" id="email" name="email" required placeholder="Ваше имя" class="order__input">
+        <div class="order__progress-container">
+          <label for="progress">Прогресс:</label>
+          <input type="range" id="progress" name="progress" min="0" max="100" value="50" class="order__progress">
+          <span id="progress-value" class="order__progress-value">50%</span>
+        </div>
+        <label for="file-upload">Загрузите файл:</label>
+        <input type="file" id="file-upload" name="file-upload" class="order__file-upload">
+        <button type="submit" class="order__submit-button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="content-container">
+      <div class="footer__content">
+        <p class="footer__text">© 2018 «LoremIpsum.net» Все права защищены.</p>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#about" class="footer__link">Qiwi wallet</a></li>
+            <li class="footer__item"><a href="#services" class="footer__link">Yandex Money</a></li>
+            <li class="footer__item"><a href="#privacy" class="footer__link">Web Money</a></li>
+            <li class="footer__item"><a href="#terms" class="footer__link">info@ipsum228.com</a></li>
+            <li class="footer__item"><a href="#contact" class="footer__link">Мы вконтакте</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
