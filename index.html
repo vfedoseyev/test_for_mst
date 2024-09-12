@@ -5,18 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/resetcss" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/order.css" />
+  <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/media.css" />
+
   <title>Главная Страница</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="content-container">
+    <div class="container">
       <div class="header__container">
         <div class="header__logo">LoremIpsum.<span class="text_blue">Net</span></div>
+        <button class="header__burger" aria-label="Open menu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -37,113 +46,123 @@
     </div>
   </header>
   <main class="main">
-    <div class="content-container">
-      <div class="main__container">
-        <h1 class="main__title">
-          <span class="text_blue">Lorem ipsum </span>dolor sit amet consectetur <span
-            class="text_blue">adipiscingv!</span>
-        </h1>
-        <div class="main__description">
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus!
-          </p>
-          <ul>
-            <li>- Totam rem aperiam eaque ipsa</li>
-            <li>- Sit voluptatem accusantium doloremque laudantium</li>
-            <li>- Sed ut perspiciatis, unde omnis iste natus error</li>
-          </ul>
-        </div>
-        <div class="main__button-container">
-          <a href="#learn-more" class="button">заказать</a>
-          <a href="#contact" class="button button-secondary">подробнее</a>
-        </div>
+    <div class="container">
+      <h1 class="main__title">
+        <span class="text_blue">Lorem ipsum </span>dolor sit amet consectetur <span
+          class="text_blue">adipiscingv!</span>
+      </h1>
+      <div class="main__description">
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus!
+        </p>
+        <ul>
+          <li>- Totam rem aperiam eaque ipsa</li>
+          <li>- Sit voluptatem accusantium doloremque laudantium</li>
+          <li>- Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+      </div>
+      <div class="main__button-container">
+        <a href="#learn-more" class="button">заказать</a>
+        <a href="#contact" class="button button-secondary">подробнее</a>
       </div>
     </div>
   </main>
-  <div class="order">
-    <div class="content-container">
+  <section class="order">
+    <div class="container">
       <div class="order__description-container">
         <h2 class="order__title">Оформление <span class="text_blue">заказа</span></h2>
         <p class="order__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
       </div>
-      <div class="order__advantage">
+      <section class="advantage">
 
-        <div class="order__card">
-          <div class="order__ico">
+        <div class="advantage__card">
+          <div class="advantage__ico">
             <img src="./ img/search_ico.png" alt="">
           </div>
           <p>Lorem ipsum dolor
             sit amet</p>
         </div>
 
-        <div class="order__card">
-          <div class="order__ico">
+        <div class="advantage__card">
+          <div class="advantage__ico">
             <img src="./ img/percent_ico.png" alt="">
           </div>
           <p>Сonsecteturadipiscing elit</p>
         </div>
 
-        <div class="order__card">
-          <div class="order__ico">
+        <div class="advantage__card">
+          <div class="advantage__ico">
             <img src="./ img/file_ico.png" alt="">
           </div>
           <p>Sed do eiusmod tempor</p>
         </div>
 
-        <div class="order__card">
-          <div class="order__ico">
+        <div class="advantage__card">
+          <div class="advantage__ico">
             <img src="./ img/message_ico.png" alt="">
           </div>
           <p>Sed do eiusmod tempor</p>
         </div>
 
-        <div class="order__card">
-          <div class="order__ico">
+        <div class="advantage__card">
+          <div class="advantage__ico">
             <img src="./ img/money_ico.png" alt="">
           </div>
           <p>Excepteur sint occaecat cupidatat non proident</p>
         </div>
 
-      </div>
-      <form class="order__form">
-        <div class="order__inputs">
-
-            <select id="service" name="service" class="order__service order__input">
-              <option value="" disabled selected hidden>Выберите тип системы</option>
-              <option value="service1">Услуга 1</option>
-              <option value="service2">Услуга 2</option>
-              <option value="service3">Услуга 3</option>
-            </select>
-
-          <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="order__input">
-
-          <input type="email" id="email" name="email" required placeholder="Ваше имя" class="order__input">
+      </section>
+      <form class="form">
+        <div class="form__inputs">
+          <select id="service" name="service" class="form__input">
+            <option value="service1">Услуга 1</option>
+            <option value="service2">Услуга 2</option>
+            <option value="service3">Услуга 3</option>
+          </select>
+          <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="form__input">
+          <input type="email" id="email" name="email" required placeholder="Ваше имя" class="form__input">
         </div>
-        <div class="order__params">
-          <div class="order__progress-container">
-            <label for="progress">Прогресс:</label>
-            <input type="range" id="progress" name="progress" min="0" max="100" value="50" class="order__progress">
-            <span id="progress-value" class="order__progress-value">50%</span>
+        <div class="form__params">
+          <div class="form__progress-container">
+            <div>
+              <label for="progress">Sed ut perspiciatis, unde omnis iste natus</label>
+              <span id="progress-value" class="form__progress-value">50%</span>
+            </div>
+              <input type="range" id="progress" name="progress" min="0" max="100" value="50" class="form__progress">
           </div>
-          <label for="file-upload">Загрузите файл:</label>
-          <input type="file" id="file-upload" name="file-upload" class="order__file-upload">
+          <div class="form__file-upload-container">
+            <button id="file-upload-button" class="form__file-upload-button"><img src="/ img/upload_icon.png" alt="">Прикрепить файл</button>
+            <input type="file" id="file-upload" name="file-upload" style="display: none;">
+          </div>
         </div>
-        <button type="submit" class="order__submit-button">Отправить</button>
+
+
+        <button type="submit" class="form__submit-button">Отправить</button>
       </form>
     </div>
-  </div>
+  </section>
   <footer class="footer">
-    <div class="content-container">
-      <div class="footer__content">
-        <p class="footer__text">© 2018 «LoremIpsum.net» Все права защищены.</p>
+    <div class="container">
+      <div class="footer__container">
+        <p class="footer__copyright">© 2018«LOREMIPSUM.NET» Все права защищены.</p>
+
         <nav class="footer__nav">
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#about" class="footer__link">Qiwi wallet</a></li>
-            <li class="footer__item"><a href="#services" class="footer__link">Yandex Money</a></li>
-            <li class="footer__item"><a href="#privacy" class="footer__link">Web Money</a></li>
-            <li class="footer__item"><a href="#terms" class="footer__link">info@ipsum228.com</a></li>
-            <li class="footer__item"><a href="#contact" class="footer__link">Мы вконтакте</a></li>
-          </ul>
+          <div class="footer__list">
+            <ul class="footer__pay">
+              <li class="footer__item"><a href="#about" class="footer__link"><img src="./ img/qiwi_icon.png" alt="">QIWI
+                  wallet</a></li>
+              <li class="footer__item"><a href="#services" class="footer__link"><img src="./ img/ya_money_icon.png"
+                    alt="">Yandex Money</a></li>
+              <li class="footer__item"><a href="#privacy" class="footer__link"><img src="./ img/web_money_icon.png"
+                    alt="">Web Money</a></li>
+            </ul>
+            <ul class="footer__links">
+              <li class="footer__item footer__item_white"><a href="#terms" class="footer__link"><img
+                    src="./ img/mail_icon.png" alt="">info@ipsum228.com</a></li>
+              <li class="footer__item footer__item_white"><a href="#contact" class="footer__link"><img
+                    src="./ img/vk_icon.png" alt="">Мы вконтакте</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>

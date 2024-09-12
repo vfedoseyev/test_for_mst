@@ -7,20 +7,41 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #f0f0f0;
     color: #ffffff;
+}
+
+/* Общие стили для контейнера */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* Добавляем внутренние отступы для мобильных устройств */
+}
+
+/* Медиазапрос для планшетов (экран меньше 992px) */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 10px;
+        /* Уменьшаем отступы */
+    }
+}
+
+/* Медиазапрос для мобильных телефонов (экран меньше 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5px;
+        /* Еще меньше отступы для мобильных устройств */
+    }
+}
+
+
+.text_blue {
+    color: #3E9CDC;
 }
 
 a {
     text-decoration: none;
 }
-
-h1,
-p {
-    margin: 0;
-    padding: 0;
-}
-
-.text_blue {
-    color: #3E9CDC;
+.no-scroll {
+    overflow: hidden; /* Блокирует прокрутку */
 }
