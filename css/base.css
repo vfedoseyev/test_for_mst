@@ -5,6 +5,10 @@
     transition: all ease 0.2s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     color: #ffffff;
@@ -42,6 +46,8 @@ body {
 a {
     text-decoration: none;
 }
+
 .no-scroll {
-    overflow: hidden; /* Блокирует прокрутку */
+    overflow: hidden;
+    /* Блокирует прокрутку */
 }

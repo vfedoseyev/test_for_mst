@@ -31,3 +31,32 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdown = document.querySelector('.custom-dropdown');
+    const selected = dropdown.querySelector('.custom-dropdown__selected');
+    const options = dropdown.querySelector('.custom-dropdown__options');
+    const optionElements = dropdown.querySelectorAll('.custom-dropdown__option');
+    const select = dropdown.querySelector('select');
+
+    selected.addEventListener('click', function () {
+        dropdown.classList.toggle('open');
+    });
+
+    optionElements.forEach(option => {
+        option.addEventListener('click', function () {
+            const value = this.getAttribute('data-value');
+            selected.textContent = this.textContent;
+            select.value = value;
+            dropdown.classList.remove('open');
+        });
+    });
+
+    // Close the dropdown when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+        }
+    });
+});

@@ -38,7 +38,7 @@
               <a href="#services" class="header__link">Цены</a>
             </li>
             <li class="header__item">
-              <a href="#contact" class="header__link">Оформить заказ</a>
+              <a href="#order" class="header__link">Оформить заказ</a>
             </li>
           </ul>
         </nav>
@@ -67,7 +67,7 @@
       </div>
     </div>
   </main>
-  <section class="order">
+  <section class="order" id="order">
     <div class="container">
       <div class="order__description-container">
         <h2 class="order__title">Оформление <span class="text_blue">заказа</span></h2>
@@ -114,11 +114,22 @@
       </section>
       <form class="form">
         <div class="form__inputs">
-          <select id="service" name="service" class="form__input">
-            <option value="service1">Услуга 1</option>
-            <option value="service2">Услуга 2</option>
-            <option value="service3">Услуга 3</option>
-          </select>
+          <div class="custom-dropdown">
+            <div class="custom-dropdown__selected" aria-label="Select service">Выберите тип системы</div>
+            <div class="custom-dropdown__options">
+                <div class="custom-dropdown__option" data-value="service1">Услуга 1</div>
+                <div class="custom-dropdown__option" data-value="service2">Услуга 2</div>
+                <div class="custom-dropdown__option" data-value="service3">Услуга 3</div>
+            </div>
+            <select id="service" name="service" class="form__input" style="display: none;">
+                <option value="" disabled selected>Выберите тип системы</option>
+                <option value="service1">Услуга 1</option>
+                <option value="service2">Услуга 2</option>
+                <option value="service3">Услуга 3</option>
+            </select>
+        </div>
+        
+          
           <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="form__input">
           <input type="email" id="email" name="email" required placeholder="Ваше имя" class="form__input">
         </div>
