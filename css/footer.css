@@ -111,6 +111,9 @@
 
 }
 @media (max-width: 385px) {
+    .footer__copyright{
+        font-size: 12px;
+    }
     .footer__pay{
         gap: 5px;
     }
