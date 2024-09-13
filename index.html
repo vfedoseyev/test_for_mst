@@ -116,21 +116,23 @@
       <form class="form">
         <div class="form__inputs">
           <div class="custom-dropdown">
-            <div class="custom-dropdown__selected" aria-label="Select service">Выберите тип системы</div>
+            <div class="custom-dropdown__selected" aria-label="Select service">Выберите тип системы <span
+                class="dropdown-arrow"></span> <!-- Стрелочка -->
+            </div>
             <div class="custom-dropdown__options">
-                <div class="custom-dropdown__option" data-value="service1">Услуга 1</div>
-                <div class="custom-dropdown__option" data-value="service2">Услуга 2</div>
-                <div class="custom-dropdown__option" data-value="service3">Услуга 3</div>
+              <div class="custom-dropdown__option" data-value="service1">Услуга 1</div>
+              <div class="custom-dropdown__option" data-value="service2">Услуга 2</div>
+              <div class="custom-dropdown__option" data-value="service3">Услуга 3</div>
             </div>
             <select id="service" name="service" class="form__input" style="display: none;">
-                <option value="" disabled selected>Выберите тип системы</option>
-                <option value="service1">Услуга 1</option>
-                <option value="service2">Услуга 2</option>
-                <option value="service3">Услуга 3</option>
+              <option value="" disabled selected>Выберите тип системы</option>
+              <option value="service1">Услуга 1</option>
+              <option value="service2">Услуга 2</option>
+              <option value="service3">Услуга 3</option>
             </select>
-        </div>
-        
-          
+          </div>
+
+
           <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="form__input">
           <input type="email" id="email" name="email" required placeholder="Ваше имя" class="form__input">
         </div>
@@ -140,10 +142,11 @@
               <label for="progress">Sed ut perspiciatis, unde omnis iste natus</label>
               <span id="progress-value" class="form__progress-value">50%</span>
             </div>
-              <input type="range" id="progress" name="progress" min="0" max="100" value="50" class="form__progress">
+            <input type="range" id="progress" name="progress" min="0" max="100" value="50" class="form__progress">
           </div>
           <div class="form__file-upload-container">
-            <button id="file-upload-button" class="form__file-upload-button"><img src="/ img/upload_icon.png" alt="">Прикрепить файл</button>
+            <button id="file-upload-button" class="form__file-upload-button"><img src="/ img/upload_icon.png"
+                alt="">Прикрепить файл</button>
             <input type="file" id="file-upload" name="file-upload" style="display: none;">
           </div>
         </div>

@@ -395,6 +395,28 @@
     z-index: 1;
 }
 
+.dropdown-arrow {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    /* Изначально смотрит вниз */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #272733;
+    /* Цвет стрелочки */
+    transition: transform 0.3s;
+    /* Плавный переход */
+}
+
+.custom-dropdown.open .dropdown-arrow {
+    transform: translateY(-50%) rotate(180deg);
+    /* Поворачиваем стрелочку */
+}
+
 .custom-dropdown__options {
     display: none;
     position: absolute;

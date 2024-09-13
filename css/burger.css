@@ -24,6 +24,7 @@
     }
 
     .header__nav {
+        border-bottom: 2px solid white;
         display: flex;
         visibility: hidden;
         transform: translateY(-140%);
