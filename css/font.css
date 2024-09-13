@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Black.ttf') format('truetype'); /* Black */
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-BlackItalic.ttf') format('truetype'); /* Black Italic */
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Bold.ttf') format('truetype'); /* Bold */
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-BoldItalic.ttf') format('truetype'); /* Bold Italic */
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Italic.ttf') format('truetype'); /* Italic */
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Light.ttf') format('truetype'); /* Light */
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-LightItalic.ttf') format('truetype'); /* Light Italic */
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.ttf') format('truetype'); /* Regular */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Thin.ttf') format('truetype'); /* Thin */
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-ThinItalic.ttf') format('truetype'); /* Thin Italic */
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Пример использования */
+body {
+    font-family: 'Lato', sans-serif; /* Применяем шрифт по умолчанию */
+}
