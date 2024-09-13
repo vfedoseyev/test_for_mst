@@ -204,7 +204,7 @@
                 <div class="custom-dropdown__option" data-value="service2">Услуга 2</div>
                 <div class="custom-dropdown__option" data-value="service3">Услуга 3</div>
               </div>
-              <select id="service" name="service" class="form__input" style="display: none;">
+              <select id="service-popup" name="service" class="form__input" style="display: none;">
                 <option value="" disabled selected>Выберите тип системы</option>
                 <option value="service1">Услуга 1</option>
                 <option value="service2">Услуга 2</option>
@@ -213,25 +213,23 @@
             </div>
 
 
-            <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="form__input">
-            <input type="email" id="email" name="email" required placeholder="Ваше имя" class="form__input">
+            <input type="text" id="name-popup" name="name" required placeholder="Ваш e-mail" class="form__input">
+            <input type="email" id="email-popup" name="email" required placeholder="Ваше имя" class="form__input">
           </div>
           <div class="form__params">
             <div class="form__progress-container">
               <div>
-                <label for="progress">Sed ut perspiciatis, unde omnis iste natus</label>
-                <span id="progress-value" class="form__progress-value">50%</span>
+                <label for="progress-popup">Sed ut perspiciatis, unde omnis iste natus</label>
+                <span id="progress-value-popup" class="form__progress-value">50%</span>
               </div>
-              <input type="range" id="progress" name="progress" min="0" max="100" value="50" class="form__progress">
+              <input type="range" id="progress-popup" name="progress" min="0" max="100" value="50" class="form__progress">
             </div>
             <div class="form__file-upload-container">
-              <button id="file-upload-button" class="form__file-upload-button"><img src="/ img/upload_icon.png"
+              <button id="file-upload-button-popup" class="form__file-upload-button"><img src="/ img/upload_icon.png"
                   alt="">Прикрепить файл</button>
-              <input type="file" id="file-upload" name="file-upload" style="display: none;">
+              <input type="file" id="file-upload-popup" name="file-upload" style="display: none;">
             </div>
           </div>
-
-
           <button type="submit" class="form__submit-button">Отправить</button>
         </form>
       </div>
