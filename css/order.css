@@ -137,6 +137,22 @@
     /* Центрирование содержимого формы */
 }
 
+.form__input,
+.form__submit-button {
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form__input:focus {
+    border-color: #3E9CDC;
+    outline: none;
+    /* Убираем обводку при фокусе */
+}
+
+.form__submit-button:hover {
+    background-color: #0056b3;
+    /* Темнее при наведении */
+}
+
 .form__inputs {
     display: flex;
     gap: 30px;
@@ -404,7 +420,8 @@
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid black; /* Цвет "птички" */
+    border-top: 5px solid black;
+    /* Цвет "птички" */
     transition: transform 0.3s;
 }
 

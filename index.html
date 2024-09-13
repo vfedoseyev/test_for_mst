@@ -117,8 +117,7 @@
         <div class="form__inputs">
           <div class="custom-dropdown">
             <div class="custom-dropdown__selected" aria-label="Select service">Выберите тип системы <span
-                class="dropdown-arrow"></span> <!-- Стрелочка -->
-            </div>
+                class="dropdown-arrow"></span></div>
             <div class="custom-dropdown__options">
               <div class="custom-dropdown__option" data-value="service1">Услуга 1</div>
               <div class="custom-dropdown__option" data-value="service2">Услуга 2</div>
@@ -132,9 +131,10 @@
             </select>
           </div>
 
-
-          <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="form__input">
-          <input type="email" id="email" name="email" required placeholder="Ваше имя" class="form__input">
+          <input type="text" id="name" name="name" required placeholder="Ваше имя" class="form__input"
+            autocomplete="name">
+          <input type="email" id="email" name="email" required placeholder="Ваш e-mail" class="form__input"
+            autocomplete="email">
         </div>
         <div class="form__params">
           <div class="form__progress-container">
@@ -222,7 +222,8 @@
                 <label for="progress-popup">Sed ut perspiciatis, unde omnis iste natus</label>
                 <span id="progress-value-popup" class="form__progress-value">50%</span>
               </div>
-              <input type="range" id="progress-popup" name="progress" min="0" max="100" value="50" class="form__progress">
+              <input type="range" id="progress-popup" name="progress" min="0" max="100" value="50"
+                class="form__progress">
             </div>
             <div class="form__file-upload-container">
               <button id="file-upload-button-popup" class="form__file-upload-button"><img src="/ img/upload_icon.png"
