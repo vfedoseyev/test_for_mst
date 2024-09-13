@@ -66,3 +66,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const openPopupButton = document.getElementById('open-popup');
+    const closePopupButton = document.getElementById('close-popup');
+    const popup = document.getElementById('popup');
+
+    // Открыть попап
+    openPopupButton.addEventListener('click', function (e) {
+        e.preventDefault(); // Предотвратить переход по якорю
+        popup.style.display = 'block';
+    });
+
+    // Закрыть попап
+    closePopupButton.addEventListener('click', function () {
+        popup.style.display = 'none';
+    });
+
+    // Закрыть попап при клике вне его содержимого
+    popup.addEventListener('click', function (e) {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});

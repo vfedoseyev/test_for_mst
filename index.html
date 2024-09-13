@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" /> -->
   <link rel="stylesheet" href="css/resetcss" />
   <link rel="stylesheet" href="css/font.css" />
   <link rel="stylesheet" href="css/header.css" />
@@ -12,6 +11,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/order.css" />
   <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/popup.css" />
   <link rel="stylesheet" href="css/base.css" />
 
   <title>Главная Страница</title>
@@ -63,7 +63,7 @@
         </ul>
       </div>
       <div class="main__button-container">
-        <a href="#learn-more" class="button">заказать</a>
+        <a href="#learn-more" id="open-popup" class="button">заказать</a>
         <a href="#contact" class="button button-secondary">подробнее</a>
       </div>
     </div>
@@ -179,14 +179,64 @@
             <ul class="footer__links">
               <li class="footer__item footer__item_white"><a href="mailto:info@ipsum228.com" class="footer__link"><img
                     src="./ img/mail_icon.png" alt="">info@ipsum228.com</a></li>
-              <li class="footer__item footer__item_white"><a href="#" class="footer__link"><img
-                    src="./ img/vk_icon.png" alt="">Мы вконтакте</a></li>
+              <li class="footer__item footer__item_white"><a href="#" class="footer__link"><img src="./ img/vk_icon.png"
+                    alt="">Мы вконтакте</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </div>
   </footer>
+  <!-- попап-форма -->
+  <div class="popup-overlay" id="popup">
+    <div class="container">
+      <div class="popup">
+        <button class="popup__close" id="close-popup">&times;</button>
+        <h3>Форма заказа</h3>
+        <form class="form">
+          <div class="form__inputs">
+            <div class="custom-dropdown">
+              <div class="custom-dropdown__selected" aria-label="Select service">Выберите тип системы <span
+                  class="dropdown-arrow"></span> <!-- Стрелочка -->
+              </div>
+              <div class="custom-dropdown__options">
+                <div class="custom-dropdown__option" data-value="service1">Услуга 1</div>
+                <div class="custom-dropdown__option" data-value="service2">Услуга 2</div>
+                <div class="custom-dropdown__option" data-value="service3">Услуга 3</div>
+              </div>
+              <select id="service" name="service" class="form__input" style="display: none;">
+                <option value="" disabled selected>Выберите тип системы</option>
+                <option value="service1">Услуга 1</option>
+                <option value="service2">Услуга 2</option>
+                <option value="service3">Услуга 3</option>
+              </select>
+            </div>
+
+
+            <input type="text" id="name" name="name" required placeholder="Ваш e-mail" class="form__input">
+            <input type="email" id="email" name="email" required placeholder="Ваше имя" class="form__input">
+          </div>
+          <div class="form__params">
+            <div class="form__progress-container">
+              <div>
+                <label for="progress">Sed ut perspiciatis, unde omnis iste natus</label>
+                <span id="progress-value" class="form__progress-value">50%</span>
+              </div>
+              <input type="range" id="progress" name="progress" min="0" max="100" value="50" class="form__progress">
+            </div>
+            <div class="form__file-upload-container">
+              <button id="file-upload-button" class="form__file-upload-button"><img src="/ img/upload_icon.png"
+                  alt="">Прикрепить файл</button>
+              <input type="file" id="file-upload" name="file-upload" style="display: none;">
+            </div>
+          </div>
+
+
+          <button type="submit" class="form__submit-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- наложение при попапе -->
   <div class="overlay"></div>
   <script src="js/script.js"></script>
