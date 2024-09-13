@@ -72,3 +72,23 @@
         font-size: 16px;
     }
 }
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
+    display: none; /* Скрываем по умолчанию */
+    z-index: 1; /* Задаем порядок отображения */
+}
+
+.header__nav {
+    z-index: 2; /* Убедитесь, что навигация выше затемнения */
+}
+
+.overlay.active {
+    display: block; /* Показываем затемнение, когда навигация активна */
+}

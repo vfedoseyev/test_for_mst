@@ -1,14 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
     const burger = document.querySelector('.header__burger');
     const nav = document.querySelector('.header__nav');
+    const overlay = document.querySelector('.overlay'); // Получаем затемнение
     const body = document.body;
 
     burger.addEventListener('click', function () {
         burger.classList.toggle('active');
         nav.classList.toggle('active');
-        body.classList.toggle('no-scroll'); // Добавляем или удаляем класс для блокировки скролла
+        overlay.classList.toggle('active'); // Добавляем или удаляем класс для затемнения
+        body.classList.toggle('no-scroll'); // Блокируем или разблокируем скролл
+    });
+
+    overlay.addEventListener('click', function () {
+        burger.classList.remove('active');
+        nav.classList.remove('active');
+        overlay.classList.remove('active'); // Скрываем затемнение
+        body.classList.remove('no-scroll'); // Разблокируем скролл
     });
 });
+
 
 
 
