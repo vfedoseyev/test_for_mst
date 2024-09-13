@@ -55,6 +55,13 @@
     font-weight: 400;
     line-height: normal;
 }
+.footer__item p {
+    color: #C3C3C3;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .footer__item_white a {
     color: #FFF;

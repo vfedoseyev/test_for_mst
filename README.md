@@ -34,10 +34,15 @@
 
 1. Склонируйте репозиторий на свой компьютер:
    ```bash
-   git clone https://github.com/ваш_логин/ваш_репозиторий.git
+   git clone https://github.com/vfedoseyev/test_for_mst
 
    Откройте файл index.html в вашем веб-браузере для просмотра.
 
  ## Ссылка на макет
 
  [ссылка на макет](https://www.figma.com/design/bvmftor0vGY31xVegkeGf7/Test?node-id=0-1&node-type=canvas&t=sw3TFsFOl43LCfQX-0)# test_for_mst
+
+
+##  Макет
+
+![Маккет](./%20img/Тестовое_1.jpg)

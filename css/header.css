@@ -24,6 +24,7 @@
 
 .header__nav {
     display: flex;
+    z-index: 2; 
 }
 
 .header__list {
